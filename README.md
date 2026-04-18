@@ -1,41 +1,23 @@
-# Retail Sales SQL Analysis
+# retail-sales-sql-analysis
 
-Small portfolio project: load a public retail dataset into SQLite, run SQL +
-Pandas analyses, and produce a short business-facing insights write-up.
+side project. UCI online retail II dataset, dumped into sqlite, ran some sql + pandas to answer business-y questions.
 
-## Why
-End-to-end demonstration of the Data Analyst / BI workflow:
+basically wanted to do the whole thing end to end:
+- grab raw csv
+- sqlite warehouse
+- sql + pandas for the questions
+- plot the interesting bits
+- write up the takeaways for someone non-technical
 
-1. Source raw CSV data
-2. Model it in a normalised SQLite warehouse
-3. Answer business questions in SQL
-4. Visualise key findings in Python
-5. Communicate the result in a one-page insight summary
+stack: python 3.10+, pandas, matplotlib, sqlite, jupyter
 
-## Stack
-- Python 3.10+, Pandas, Matplotlib
-- SQLite (single-file warehouse, no server)
-- Jupyter for the analysis notebook
-
-## Project layout
+## run
 ```
-data/        raw CSV(s) - not committed, see data/README.md
-sql/         schema + analysis queries
-src/         small Python helpers (loader, query runner)
-notebooks/   analysis notebook
-docs/        business insights summary
-```
-
-## Quick start
-```bash
 pip install -r requirements.txt
 python src/build_warehouse.py
 jupyter lab notebooks/analysis.ipynb
 ```
 
-## Dataset
-The "Online Retail II" dataset (UCI ML Repository) — UK gift retailer
-transactions 2009–2011. Download instructions in `data/README.md`.
+dataset is online retail II from UCI - UK gift retailer 2009-2011. download instructions in `data/README.md`.
 
-## Status
-Work in progress.
+write-up of what I found is in `docs/insights.md`.
