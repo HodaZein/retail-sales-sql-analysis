@@ -2,6 +2,8 @@
 
 side project. UCI online retail II dataset, dumped into sqlite, ran some sql + pandas to answer business-y questions.
 
+**live eda report:** https://hodazein.github.io/retail-sales-sql-analysis/ (self-contained demo on synthetic data, no excel download needed to view)
+
 basically wanted to do the whole thing end to end:
 - grab raw csv
 - sqlite warehouse
